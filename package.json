@@ -1,0 +1,42 @@
+{
+  "name": "typescript-node-opcua",
+  "version": "1.0.0",
+  "description": "The project to practice TS/node-opcua stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasasats/typescript-node-opcua.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sasasats/typescript-node-opcua/issues"
+  },
+  "homepage": "https://github.com/sasasats/typescript-node-opcua#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "node-opcua": "^2.175.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.1",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "jiti": "^2.7.0",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.65.0",
+    "vitest": "^4.1.10"
+  }
+}
