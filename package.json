@@ -9,7 +9,11 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "opcplc:pull": "docker pull mcr.microsoft.com/iotedge/opc-plc:latest",
+    "opcplc:run": "docker run -d -p 50000:50000 -p 8081:8081 --name opcplc mcr.microsoft.com/iotedge/opc-plc:latest --pn=50000 --autoaccept --unsecuretransport --sn=5 --sr=10 --fn=5 --fr=1",
+    "opcplc:start": "docker start opcplc",
+    "opcplc:stop": "docker stop opcplc"
   },
   "repository": {
     "type": "git",
